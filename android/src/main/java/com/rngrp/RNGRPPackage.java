@@ -17,9 +17,10 @@ public class RNGRPPackage implements ReactPackage {
     return modules;
   }
 
-  public List<Class<? extends JavaScriptModule>> createJSModules() {
-    return Collections.emptyList();
-  }
+   // Deprecated from RN 0.47.0
+   public List<Class<? extends JavaScriptModule>> createJSModules() {
+       return Collections.emptyList();
+   }
 
   @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
